@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="312dp"
+        android:layout_height="52dp"
+
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="ĐỌC BÁO RSS"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        tools:ignore="MissingConstraints"
+        android:background="#808080">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#808080"
+            android:text="HOME"
+            android:padding="0dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webViewNews"
+        android:layout_width="410dp"
+        android:layout_height="680dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
